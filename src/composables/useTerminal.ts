@@ -48,7 +48,7 @@ export function useTerminal() {
     status: {
       desc: 'Показать текущий статус системы',
       execute: () => {
-        return `<span class="text-[#ff8c00]">System Status:</span>\n  Build Progress: ${progress.percent}%\n  Current Task: ${progress.label}\n  Remaining Time: ${progress.estTime.value}\n  Packets: ${progress.packets.value}\n  <span class="text-green-500">Status: RUNNING</span>`
+        return `<span class="text-[#ff8c00]">System Status:</span>\n  Build Progress: ${progress.percent}%\n  Current Task: ${progress.label}\n  Remaining Time: ${progress.estTime}\n  Packets: ${progress.packets}\n  <span class="text-green-500">Status: RUNNING</span>`
       },
     },
     version: {

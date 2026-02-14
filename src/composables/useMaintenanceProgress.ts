@@ -1,4 +1,4 @@
-import { onUnmounted, ref } from 'vue'
+import { onUnmounted, reactive, ref } from 'vue'
 import { progressMeta, timelineSteps } from '../config/maintenance.config'
 
 /**
@@ -69,7 +69,7 @@ export function useMaintenanceProgress() {
 
   onUnmounted(() => clearInterval(timer))
 
-  return {
+  return reactive({
     /** Процент завершения (0–100) */
     percent,
 
@@ -90,5 +90,5 @@ export function useMaintenanceProgress() {
 
     /** Кол-во завершённых шагов */
     completed,
-  }
+  })
 }
