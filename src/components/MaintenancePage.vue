@@ -145,20 +145,19 @@ onMounted(() => {
 
       <!-- Footer -->
       <div
-        class="mt-4 pb-4 px-4 lg:mt-6 lg:pb-0 w-full font-mono text-[10px] text-[#444] uppercase tracking-widest shrink-0 flex items-center justify-between"
+        class="mt-4 pb-4 px-4 lg:mt-6 lg:pb-0 w-full font-mono text-[10px] text-[#444] uppercase tracking-widest shrink-0 gap-2 flex flex-col sm:flex-row items-center justify-between"
       >
         <span
-          class="cursor-help group"
+          class="cursor-help group text-center sm:text-left flex-1 order-2 sm:order-1"
           title="💡 Подсказка: откройте DevTools (F12)"
         >
           {{ maintenance.footer }}
-          <span class="text-[#666] opacity-0 group-hover:opacity-100 transition-opacity ml-2">🔍</span>
         </span>
         <a
           :href="links.github"
           target="_blank"
           rel="noopener noreferrer"
-          class="inline-flex items-center justify-center w-6 h-6 rounded-md text-[#555] hover:text-white hover:bg-[#2a2a2a] transition-all duration-200"
+          class="inline-flex items-center justify-center w-6 h-6 rounded-md text-[#555] hover:text-white hover:bg-[#2a2a2a] transition-all duration-200 order-1 sm:order-2"
           title="GitHub"
         >
           <GithubIcon />

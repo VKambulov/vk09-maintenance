@@ -30,9 +30,9 @@ defineProps<{
       </div>
     </div>
 
-    <div class="mt-4 flex items-center gap-4 text-xs font-mono text-[#555]">
+    <div class="mt-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-xs font-mono text-[#555]">
       <span>EST. TIME: {{ estTime }}</span>
-      <span>•</span>
+      <span class="hidden sm:inline">•</span>
       <span>PACKETS: {{ packets }}</span>
     </div>
   </div>
